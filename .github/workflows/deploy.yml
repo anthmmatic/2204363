@@ -1,0 +1,9 @@
+on:
+  pull_request:
+
+jobs:
+  job-name:
+    environment: staging
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deployed!"
