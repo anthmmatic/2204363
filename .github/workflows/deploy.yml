@@ -1,8 +1,11 @@
 on:
   workflow_dispatch:
+  pull_request:
+    types: [closed]
 
 jobs:
   job-name:
+    if: github.event.pull_request == null || github.event.pull_request.merged == true
     environment: staging
     runs-on: ubuntu-latest
     steps:
