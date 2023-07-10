@@ -1,7 +1,7 @@
 on:
   workflow_dispatch:
   push:
-    branches: [staging2]
+    branches: [stagingbr]
 
 jobs:
   job-name:
